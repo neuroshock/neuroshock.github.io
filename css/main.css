@@ -9,6 +9,12 @@ body {
     padding-bottom: 20px;
     background-image: url(../img/white-linen-background.jpg);
 }
+body.rsvp {
+    background-color: white;
+    background-image: url(../img/Background_800px.jpg);
+    background-repeat: no-repeat;
+    background-position: left 40px top 50px;
+}
 .navbar-toggle .icon-bar {
     background-color: #999999;
 }
