@@ -10,100 +10,84 @@
         <meta name="description" content="RSVP to the wedding of Mike Chung and Katherine MacLennan on June 15, 2014.">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/main.css">
-                
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-        
-        <style>
-            div#errContainer {
-                border: 1px solid red;
-                margin: 5px;
-                padding: 5px;
-            }
-            div#errContainer ol li {
-                list-style-type: disc;
-                margin-left: 20px;
-                margin-top: 3px;
-            }
-            div#errContainer { display: none }
-        </style>
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body class="rsvp">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-        <div id="rsvp">
-            <div class="container">
-                <p class="lead">
-                    <span class="largecap">KATHERINE MACLENNAN</span><br/>
-                    AND <span class="largecap">MICHAEL CHUNG</span>
-                </p>
-                <p class="text-right">
-                    Sunday, the fifteenth of June, 2014<br/>
-                    at four o'clock at<br/>
-                    The Greenhouse Loft in Chicago, Illinois<br/>
-                </p>
-                <div id="rsvpForm">
-                    <p>
-                        Please RSVP by May 17, 2014.
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7 col-sm-offset-2">
+                    <p class="lead">
+                        <span class="largecap">KATHERINE MACLENNAN</span><br/>
+                        AND <span class="largecap">MICHAEL CHUNG</span>
                     </p>
-                    <div id="errContainer">
-                        <b>There are errors in your submission, please see below for details.</b>
-                        <ol>
-                            <li><label for="entry.871136061" class="error"></label></li>
-                            <li><label for="entry.1261414969" class="error"></label></li>
-                            <li><label for="entry.128640618" class="error"></label></li>
-                        </ol>
+                    <p class="text-right">
+                        Sunday, the fifteenth of June, 2014<br/>
+                        at four o'clock at<br/>
+                        The Greenhouse Loft in Chicago, Illinois<br/>
+                    </p>
+                    <div id="rsvpForm">
+                        <p>
+                            Please RSVP by May 17, 2014.
+                        </p>
+                        <div id="errContainer">
+                            <b>There are errors in your submission, please see below for details.</b>
+                            <ol>
+                                <li><label for="entry.871136061" class="error"></label></li>
+                                <li><label for="entry.1261414969" class="error"></label></li>
+                                <li><label for="entry.128640618" class="error"></label></li>
+                            </ol>
+                        </div>
+                        <form action="https://docs.google.com/forms/d/1eAt7Ie5IWBY0-bX_HCiFBY3R_5bTOSFvgNvvEY_JNoA/formResponse" method="POST" id="ss-form" target="_self" onsubmit="" role="form">
+                            <div class="form-group">
+                                <label for="entry_871136061">* Please enter first and last names of all guests!</label>
+                                <input type="text" name="entry.871136061" value="" id="entry_871136061" required placeholder="Guest name(s)" class="form-control"/>
+                            </div>
+                            <div class="form-group">
+                                <label>* Will you be attending?</label>
+                                <div class="radio">
+                                    <input type="radio" name="entry.1261414969" value="Accepts with joy" id="group_1261414969_1" required/> <label for="group_1261414969_1">Accepts with joy</label><br/>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="entry.1261414969" value="Declines with regret" id="group_1261414969_2" required/><label for="group_1261414969_2">Declines with regret</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="entry_128640618">Your email address?</label><br/>
+                                <input type="email" name="entry.128640618" value="" id="entry_128640618" placeholder="Email address" class="form-control" />
+                            </div>
+                            <input type="hidden" name="draftResponse" value="[,,&quot;-1116462001167763946&quot;]" />
+                            <input type="hidden" name="pageHistory" value="0" />
+                            <input type="hidden" name="fromEmail" value="false" />
+                            <input type="hidden" name="fbzx" value="-1116462001167763946" />
+                            <div class="form-group">
+                                <input type="submit" name="btnSubmit" value="Submit" id="ss-submit" class="btn btn-default" /><br/>
+                                <small>* required fields</small>
+                            </div>
+                        </form>
                     </div>
-                    <form action="https://docs.google.com/forms/d/1eAt7Ie5IWBY0-bX_HCiFBY3R_5bTOSFvgNvvEY_JNoA/formResponse" method="POST" id="ss-form" target="_self" onsubmit="" role="form">
-                        <div class="form-group">
-                            <label for="entry_871136061">* Please enter first and last names of all guests!</label>
-                            <input type="text" name="entry.871136061" value="" id="entry_871136061" required placeholder="Guest name(s)" class="form-control"/>
-                        </div>
-                        <div class="form-group">
-                            <label>* Will you be attending?</label>
-                            <div class="radio">
-                                <input type="radio" name="entry.1261414969" value="Accepts with joy" id="group_1261414969_1" required/> <label for="group_1261414969_1">Accepts with joy</label><br/>
-                            </div>
-                            <div class="radio">
-                                <input type="radio" name="entry.1261414969" value="Declines with regret" id="group_1261414969_2" required/><label for="group_1261414969_2">Declines with regret</label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="entry_128640618">Your email address?</label><br/>
-                            <input type="email" name="entry.128640618" value="" id="entry_128640618" placeholder="Email address" class="form-control" />
-                        </div>
-                        <input type="hidden" name="draftResponse" value="[,,&quot;-1116462001167763946&quot;]" />
-                        <input type="hidden" name="pageHistory" value="0" />
-                        <input type="hidden" name="fromEmail" value="false" />
-                        <input type="hidden" name="fbzx" value="-1116462001167763946" />
-                        <div class="form-group">
-                            <input type="submit" name="btnSubmit" value="Submit" id="ss-submit" class="btn btn-default" /><br/>
-                            <small>* required fields</small>
-                        </div>
-                    </form>
                 </div>
             </div>
         </div>
         
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 
-        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
         
+        <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
         <script>
-            var successText = "Thank you for your RSVP";
             var container = $('div#errContainer');
             $( "#ss-form" ).validate({
               submitHandler: function(form) {
                 $("#ss-submit").attr("disabled", "disabled");
-                // ajax post goes here
-                // on success, hide form and display message
-                // on error, ask to try again later
+                form.submit();
               },
               errorContainer: container,
               errorLabelContainer: $("ol", container),
@@ -134,12 +118,12 @@
               }
             });
         </script>
-        <script>/*
+        
+        <script>
             var _gaq=[['_setAccount','UA-45157413-1'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src='//www.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
-            */
         </script>
     </body>
 </html>

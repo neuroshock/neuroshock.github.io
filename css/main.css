@@ -9,11 +9,16 @@ body {
     padding-bottom: 20px;
     background-image: url(../img/white-linen-background.jpg);
 }
+
 body.rsvp {
     background-color: white;
     background-image: url(../img/Background_800px.jpg);
     background-repeat: no-repeat;
-    background-position: left 40px top 50px;
+    background-position: center 50px;
+}
+
+div#rsvpForm {
+    padding-top: 20px;
 }
 .navbar-toggle .icon-bar {
     background-color: #999999;
@@ -49,6 +54,18 @@ iframe#emailNotification {
     height: 280px;
 }
             
+div#errContainer {
+    border: 1px solid red;
+    margin: 5px;
+    padding: 5px;
+}
+div#errContainer ol li {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-top: 3px;
+}
+div#errContainer { display: none }
+
 @media (max-width: 500px) {
     iframe#emailNotification {
         width: 290px;
