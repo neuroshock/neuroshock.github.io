@@ -20,6 +20,9 @@ body.rsvp {
 div#rsvpForm {
     padding-top: 20px;
 }
+.navbar {
+    background-color: white;
+}
 .navbar-toggle .icon-bar {
     background-color: #999999;
 }
@@ -36,9 +39,6 @@ div#rsvpForm {
 }
 .hotel {
     margin-bottom: 15px;
-}
-.hotel-blurb {
-  
 }
 .photo-us {
     max-height: 250px;
